@@ -1,4 +1,4 @@
-# take-the-day
+# take-the-day🎞🎞
 
 MERN 스택을 이용하여, 간단한 CRUD 웹어플리 케이션을 만들어 본다😁
 
