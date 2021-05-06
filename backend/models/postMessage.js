@@ -8,7 +8,7 @@ const postSchema = mongoose.Schema({
     selectedFile: String,
     likeCount: {
         type: Number,
-        defaule: 0
+        default: 0
     },
     createdAd: {
         type: Date,
