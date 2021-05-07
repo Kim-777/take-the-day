@@ -19,6 +19,10 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Hello to TTD API');
+})
+
 mongoose.connect(MONGO_URI, {
     useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true
 }).then(() => {

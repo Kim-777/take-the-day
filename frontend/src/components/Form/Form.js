@@ -43,6 +43,13 @@ const Form = ({ currentId, setCurrentId}) => {
             ...postData,
             [e.target.name]: e.target.value,
         })
+    };
+
+    const onChangeTag = e => {
+        setPostData({
+            ...postData,
+            tags: e.target.value.split(',')
+        })
     }
 
     const onFileDone = ({base64}) => setPostData({
@@ -95,7 +102,7 @@ const Form = ({ currentId, setCurrentId}) => {
                     label="Tags" 
                     fullWidth 
                     value= {postData.tags}
-                    onChange={onChangeInput}
+                    onChange={onChangeTag}
                 />
                 <div className={classes.fileInput}>
                     <FileBase
